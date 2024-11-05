@@ -7,8 +7,8 @@ We'll be focusing on the basics of RL and essential Python programming skills, l
 ### Week 2 
 Let's dive into RL now with an intrudction to Markov Decision Processes (MDPs) and the development of gridworld simulations, we will start with a frozen lake slippery walk environment helping you visualize agent behavior in a structured environment.
 ### Week 3 
-delves into algorithms for estimating state values, where you'll implement value and policy iteration techniques to optimize decision-making.
+Here we delves into algorithms for estimating state values and q-values where you'll implement value and policy iteration techniques to optimize decision-making.
 ### Week 4 
-challenges you to apply your knowledge by solving the game of Blackjack using Monte Carlo methods and Q-learning, honing your skills in practical problem-solving.
+Here comes the first part of our project it challenges you to apply your knowledge by solving the game of Blackjack using Monte Carlo methods and Q-learning, honing your skills in practical problem-solving.
 ### Week 5 
-Now we move to DRL to apply the Deep Q-Network (DQN) algorithm, where we'll train an AI agent in an Atari game using the OpenAI's Gymnasium Library 
+Now we move to DRL to apply the Deep Q-Network (DQN) algorithm, where we'll be training an DRL(Deep Reinforcement Learning) agent in an Atari game using the OpenAI's Gymnasium Library 
