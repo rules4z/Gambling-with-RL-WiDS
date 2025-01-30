@@ -1,7 +1,6 @@
 # Gambling-with-RL--WiDS
 The main repo for the WiDS 2024 project - Gambling with RL
 
-Here is the tentative timeline for the project-
 ### Week 1 : MDP 
 
 We'll be focusing on the basics of RL and essential Python programming skills, laying the groundwork for further exploration.  <br/>
