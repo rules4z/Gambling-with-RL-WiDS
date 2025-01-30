@@ -2,11 +2,12 @@
 The main repo for the WiDS 2024 project - Gambling with RL
 
 Here is the tentative timeline for the project-
-### Week 1
+### Week 1 : MDP 
+
 We'll be focusing on the basics of RL and essential Python programming skills, laying the groundwork for further exploration.  <br/>
 Our main aim would be to get a general intro to RL and explore the fundamentals of Markov Decision Processes (MDPs), focusing on their structure, components, and role in modeling decision-making in reinforcement learning.
 
-### Week 2 
+### Week 2 : Dynamic Programming
 
 This week, we'll dive into basic RL algorithms, specifically Policy and Value Iteration. Our goal is to understand how these fundamental techniques help solve MDPs by iteratively improving policies and estimating value functions.
 Tasks:
@@ -17,18 +18,35 @@ Tasks:
 ## Extra Resources:
 Watch the provided video resources for a deeper understanding of [expected returns](https://www.youtube.com/watch?v=a-SnJtmBtyA&t=47s), [policies, value functions](https://www.youtube.com/watch?v=eMxOGwbdqKY), and [optimal policies](https://www.youtube.com/watch?v=rP4oEpQbDm4&t=309s). These will complement the reading and help clarify key concepts.
 
-### Week 3  
-This week, we'll explore **Model-Free Prediction** techniques in Reinforcement Learning, specifically focusing on **Monte Carlo (MC) methods**. These methods estimate value functions using sampled experiences instead of relying on a complete model of the environment.  
+### Week 3: Multi-Armed Bandits (MAB)  
 
-**Theory:**  
-- Before starting the chapter, read **Section 2.1 and the beginning of 2.2 (Page 9,10)** from the provided [resource](https://www.google.com/url?q=https://iitbacin-my.sharepoint.com/:b:/g/personal/22b0958_iitb_ac_in/EVlWfRNoMqROrnXfGyRIi-EB-HvVnbCaUIVFyU370Ui33Q?e%3DXS5RsU&sa=D&source=docs&ust=1738277581603118&usg=AOvVaw0-BX6zFluztLP89M9SKL7m).  
-- Then, carefully read **Chapter 4 of *Grokking Deep Reinforcement Learning*** and solve the upcoming assignment. This chapter covers Monte Carlo methods, including first-visit and every-visit MC, and how they help estimate value functions.  
+This week, we dive into **Multi-Armed Bandits (MAB)**, a fundamental problem in **Reinforcement Learning (RL)** that serves as a simplified model for decision-making under uncertainty. Unlike **Markov Decision Processes (MDPs)**, where actions influence future states, **MAB problems focus on immediate rewards**, making them a key concept in **online learning and exploration-exploitation trade-offs**.  
 
-**Extra Resources:**  
-- Read the provided [page](https://ai.stackexchange.com/questions/23773/why-is-regret-so-defined-in-mabs) to learn more about the **regret function**, a key concept in RL.  
-- After completing *Grokking*, further strengthen your understanding by reading **Chapter 2 from *Sutton and Barto***, which provides additional insights into Monte Carlo methods and their applications.  
+---
 
-### Week 4  
+### **Theory**  
+Before starting the chapter, read **Section 2.1 and the beginning of 2.2** from Page **9-10** of [this resource](https://www.google.com/url?q=https://iitbacin-my.sharepoint.com/:b:/g/personal/22b0958_iitb_ac_in/EVlWfRNoMqROrnXfGyRIi-EB-HvVnbCaUIVFyU370Ui33Q?e%3DXS5RsU&sa=D&source=docs&ust=1738277581603118&usg=AOvVaw0-BX6zFluztLP89M9SKL7m). Then, move on to:  
+- **Grokking Chapter 4**: Read the chapter carefully and solve the upcoming assignment.  
+- **Sutton and Barto, Chapter 2**: Recommended after completing Grokking for deeper insights.  
+
+To enhance your understanding, read about the **regret function** [here](https://ai.stackexchange.com/questions/23773/why-is-regret-so-defined-in-mabs), which quantifies how much reward is lost due to not choosing the optimal action at every step.  
+
+---
+
+### **Assignment**  
+This week, we focus on implementing **Multi-Armed Bandits** and exploring different strategies to balance **exploration vs. exploitation** effectively.  
+
+#### **Tasks**  
+1. Implement and compare the following **MAB algorithms**:  
+   - **ϵ-Greedy Algorithm**  
+   - **Upper Confidence Bound (UCB)**  
+   - **Thompson Sampling**  
+2. Analyze their performance on different reward distributions.  
+3. Visualize the **regret** for each algorithm to understand their efficiency over time.  
+
+Use the provided **notebook template** to implement these algorithms.  
+
+### Week 4 : Monte Carlo and BlacJack Project
 This week, we officially start **gambling in RL** with **Blackjack**! We’ll explore **Temporal Difference (TD) learning**, a powerful method that generalizes Monte Carlo learning and allows for more flexible policy evaluation.  
 
 **Theory:**  
@@ -48,7 +66,7 @@ This week, we officially start **gambling in RL** with **Blackjack**! We’ll ex
 - Finally, **watch your agent play Blackjack** and (hopefully) win loads of money—if only it were real! 💰😆  
 
 
-### Week 5 (Optional)  
+### Week 5 (Optional) : DQN and Atari Games
 This week marks our transition into **real-world-like RL problems**. Unlike the earlier phases, which had small and well-defined action and state spaces, we now delve into **complex environments** where Deep Learning enables us to train **Deep Reinforcement Learning (DRL) networks** to handle **high-dimensional state spaces and continuous action spaces**.  
 
 ---
@@ -64,7 +82,7 @@ While other techniques like **Policy Gradient & Actor-Critic** exist, we will **
 ---
 
 ### **For Those New to ML & Neural Networks**  
-- Start by watching this [**introductory video**]() to understand **Neural Networks** (NNs).  
+- Start by watching this [**introductory video**](https://www.youtube.com/watch?v=SgC6AZss478) to understand **Neural Networks** (NNs).  
 - You can initially treat **Neural Nets as Black Box Function Approximators** and dive deeper later.  
 
 ---
@@ -72,7 +90,7 @@ While other techniques like **Policy Gradient & Actor-Critic** exist, we will **
 ### **Resources to Watch & Read**  
 1. **Q-Learning vs Deep Q-Learning** + **Slippery Frozen Lake using DQN** [video](https://www.youtube.com/watch?v=SgC6AZss478)
 2. **OG DRL Paper Explanation** - [paper](https://www.youtube.com/watch?v=nOBm4aYEYR4)  
-3. **Dueling DQN - Full Implementation Playlist** - [Playlist](https://www.youtube.com/watch?v=EUrWGTCGzlA)  
+3. **Dueling DQN - Full Implementation Playlist** - [Playlist](https://www.youtube.com/watch?v=2nonlRp3vT0&list=PLOkmXPXHDP22Lh0AAmRi7N5RlJzK68mpy)  
 
 ---
 
